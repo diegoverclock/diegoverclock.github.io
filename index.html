@@ -2,75 +2,265 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Diego Alonso Morales Salazar | Data Analyst</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Diego Morales</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #3b82f6;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 22px;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tags span {
+            display: inline-block;
+            background: #334155;
+            padding: 6px 10px;
+            margin: 5px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #334155;
+            padding: 6px 12px;
+            margin: 5px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #020617;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
+<!-- HERO -->
+<section class="hero">
     <h1>Ing. Diego Alonso Morales Salazar</h1>
-    <p>Analista de Datos | Python | SQL | Power BI</p>
-</header>
+    <h3>Analista de Datos Jr | Python | SQL | Power BI</h3>
 
-<section id="about">
-    <h2>Sobre mí</h2>
     <p>
-        Soy Ingeniero en Comunicaciones y Electrónica con experiencia en análisis de datos.
-        Me especializo en transformar datos en insights para la toma de decisiones.
+        Transformo datos en insights accionables que impulsan decisiones estratégicas.
+    </p>
+
+    <p>
+        📊 +10,000 registros analizados | 📈 Proyectos con impacto real
+    </p>
+
+    <a href="#proyectos" class="btn">Ver proyectos</a>
+    <a href="#contacto" class="btn">Contactarme</a>
+</section>
+
+<!-- SOBRE MI -->
+<section>
+    <h2>👨‍💻 Sobre mí</h2>
+
+    <p>Soy Ingeniero en Comunicaciones y Electrónica enfocado en análisis de datos.</p>
+
+    <p>
+        Me especializo en transformar datos en información útil para la toma de decisiones
+        utilizando Python, SQL y herramientas de visualización.
+    </p>
+
+    <p>
+        He trabajado con datasets reales donde identifiqué patrones, tendencias y oportunidades de mejora.
+    </p>
+
+    <p>
+        Busco una oportunidad como Analista de Datos Jr donde pueda generar impacto desde el primer día.
     </p>
 </section>
 
-<section id="projects">
-    <h2>Proyectos</h2>
+<!-- HABILIDADES -->
+<section>
+    <h2>🛠️ Habilidades</h2>
 
-    <div class="project">
-        <h3>Instacart</h3>
-        <p>Identifiqué patrones de compra y tendencias de consumo en datos de e-commerce para apoyar la toma de decisiones.</p>
-        <a href="https://github.com/diegoverclock/instacart" target="_blank">🔗 Ver código en GitHub</a>
+    <div class="skills">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Matplotlib</span>
+        <span>Seaborn</span>
+        <span>SQL</span>
+        <span>Power BI</span>
+        <span>Excel</span>
+        <span>Git</span>
+        <span>Streamlit</span>
+    </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+    <h2>📊 Proyectos destacados</h2>
+
+    <!-- TAXI -->
+    <div class="card">
+        <h3>🚕 Análisis de viajes de taxi</h3>
+
+        <p><strong>Dataset:</strong> +10,000 registros</p>
+
+        <p>
+            Analicé datos de viajes de taxi para identificar patrones de demanda y comportamiento de usuarios.
+        </p>
+
+        <ul>
+            <li>Identifiqué zonas con mayor demanda</li>
+            <li>Detecté patrones por día y clima</li>
+            <li>Generé insights para optimizar la asignación de unidades</li>
+        </ul>
+
+        <img src="img/taxi.png" alt="Análisis de taxi">
+
+        <a href="#" class="btn">Ver proyecto</a>
+        <a href="#" class="btn">Ver código</a>
     </div>
 
-    <div class="project">
-        <h3>Megaline</h3>
-        <p>Comparé la rentabilidad de los planes de telecomunicaciones Surf y Ultimate analizando el consumo de clientes para identificar la opción más rentable.</p>
-        <a href="https://github.com/diegoverclock/megaline" target="_blank">🔗 Ver código en GitHub</a>
+    <!-- VEHICULOS -->
+    <div class="card">
+        <h3>🚗 Dashboard de vehículos</h3>
+
+        <p><strong>Dataset:</strong> +5,000 registros</p>
+
+        <p>
+            Desarrollé una aplicación web interactiva para analizar tendencias de precios y características del mercado automotriz.
+        </p>
+
+        <ul>
+            <li>Filtros dinámicos en tiempo real</li>
+            <li>Comparación de precios por características</li>
+            <li>Deploy en Render</li>
+        </ul>
+
+        <img src="img/vehiculos.png" alt="Dashboard vehículos">
+
+        <a href="#" class="btn">Ver proyecto</a>
+        <a href="#" class="btn">Ver demo</a>
     </div>
 
-    <div class="project">
-        <h3>Games</h3>
-        <p>Identifiqué tendencias del mercado de videojuegos y factores de éxito analizando ventas globales por región.</p>
-        <a href="https://github.com/diegoverclock/games" target="_blank">🔗 Ver código en GitHub</a>
-    </div>
+    <!-- TELECOM -->
+    <div class="card">
+        <h3>📱 Análisis de telecomunicaciones</h3>
 
-    <div class="project">
-        <h3>Dashboard Interactivo</h3>
-        <p>Desarrollé una aplicación web interactiva para analizar precios y tendencias del mercado automotriz, facilitando la exploración de datos en tiempo real.</p>
-        <a href="https://sprint7-project-epum.onrender.com/" target="_blank">Ver demo</a>
-        <br>
-        <a href="https://github.com/diegoverclock/dashboard_analisis_de_vehiculos" target="_blank">🔗 Ver código en GitHub</a>
-    </div>
-    
-    <div class="project">
-        <h3>Taxis</h3>
-        <p>Identifiqué patrones de demanda y el impacto del clima en la duración de viajes de taxi para entender el comportamiento del servicio.</p>
-        <a href="https://github.com/diegoverclock/taxis" target="_blank">🔗 Ver código en GitHub</a>
-    </div>
+        <p><strong>Dataset:</strong> +1,000 usuarios</p>
 
+        <p>
+            Analicé datos de clientes para identificar el plan más rentable y optimizar la estrategia comercial.
+        </p>
+
+        <ul>
+            <li>Comparación de ingresos entre planes</li>
+            <li>Análisis estadístico de usuarios</li>
+            <li>Recomendaciones basadas en datos</li>
+        </ul>
+
+        <img src="img/telecom.png" alt="Análisis telecom">
+
+        <a href="#" class="btn">Ver proyecto</a>
+    </div>
 
 </section>
 
-<section id="contact">
-    <h2>Contacto</h2>
-    <p>Email: diego.ipn.esime@gmail.com</p>
-    <p>
-  LinkedIn: 
-  <a href="https://www.linkedin.com/in/diego-morales-salazar" target="_blank">
-    🔗 Conectar en LinkedIn
-  </a>
-</p>
+<!-- EXPERIENCIA -->
+<section>
+    <h2>📈 Experiencia</h2>
+
+    <div class="card">
+        <h3>Centro de Servicio Dr. Gadget</h3>
+        <p>Gerente | Enero 2024 – Actualidad</p>
+
+        <ul>
+            <li>Optimicé procesos mediante automatización en Excel</li>
+            <li>Capacité personal técnico mejorando la eficiencia operativa</li>
+            <li>Implementé control de inventario digital</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+    <h2>📬 Contacto</h2>
+
+    <p>📧 diego.ipn.esime@gmail.com</p>
+
+    <a href="#" class="btn">LinkedIn</a>
+    <a href="#" class="btn">GitHub</a>
+
+    <p><strong>🚀 Abierto a oportunidades como Analista de Datos Jr</strong></p>
+    <p>📍 Disponibilidad inmediata</p>
 </section>
 
 <footer>
-    <p>© 2026 Diego Alonso Morales Salazar</p>
+    <p>© 2026 Diego Morales</p>
 </footer>
 
 </body>
