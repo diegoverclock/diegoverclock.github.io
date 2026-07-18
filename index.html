@@ -168,6 +168,59 @@
 <section id="proyectos">
     <h2>📊 Proyectos destacados</h2>
 
+<!-- Operadores Ineficaces -->
+<div class="card">
+    <h3>📞 Identificación de operadores ineficaces</h3>
+
+    <p><strong>Problema</strong></p>
+    <p>
+        Una empresa de telecomunicaciones necesita identificar a los operadores con bajo desempeño
+        para mejorar la calidad del servicio y optimizar la atención a los clientes. Sin un análisis
+        de datos, resulta difícil detectar patrones de ineficiencia relacionados con llamadas perdidas,
+        tiempos de espera y carga de trabajo de cada operador.
+    </p>
+
+    <p><strong>Datos</strong></p>
+    <p>
+        Se analizaron registros de llamadas y un conjunto de datos con información de los clientes.
+        Entre las variables disponibles se encuentran la dirección de la llamada, duración,
+        tiempo total de conversación, llamadas perdidas, operadores asignados y fechas de inicio
+        del servicio.
+    </p>
+
+    <p><strong>Proceso</strong></p>
+    <p>
+        Se realizó la limpieza e integración de los datos utilizando Python (Pandas y NumPy).
+        Posteriormente se desarrolló un análisis exploratorio (EDA), se calcularon métricas por
+        operador, se definieron umbrales para detectar operadores ineficaces y se aplicaron
+        pruebas de hipótesis (Mann-Whitney U) para validar estadísticamente las diferencias
+        encontradas entre operadores eficientes e ineficientes.
+    </p>
+
+    <p><strong>Insights</strong></p>
+    <p>
+        El análisis permitió identificar operadores con un alto número de llamadas perdidas,
+        mayores tiempos de espera y menor volumen de llamadas atendidas. Las pruebas estadísticas
+        confirmaron diferencias significativas entre ambos grupos, proporcionando evidencia objetiva
+        para clasificar el desempeño de los operadores.
+    </p>
+
+    <p><strong>Impacto</strong></p>
+    <p>
+        Los resultados permiten implementar estrategias de capacitación, redistribuir cargas de
+        trabajo y mejorar la asignación de operadores. Esto contribuye a reducir tiempos de espera,
+        disminuir llamadas perdidas y aumentar la satisfacción de los clientes mediante decisiones
+        respaldadas por datos.
+    </p>
+
+    <p>
+        <img src="img/telecom-operator-performance.png" alt="Análisis de operadores de telecomunicaciones">
+
+        <a href="https://github.com/diegoverclock/telecom-operator-performance-analysis/blob/main/README.md" class="btn" target="_blank">Ver proyecto</a>
+        <a href="https://github.com/diegoverclock/telecom-operator-performance-analysis/blob/main/telecom-operator-performance-analysis.ipynb" class="btn" target="_blank">Ver código</a>
+    </p>
+</div>
+    
     <!-- TAXI -->
     <div class="card">
         <h3>🚕 Análisis de viajes de taxi</h3>
